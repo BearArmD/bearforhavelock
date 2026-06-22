@@ -2,7 +2,7 @@
 
 Campaign website for Harlan "Bear" McGillem, candidate for **Havelock City Commissioner** (November 2026).
 
-**Live site:** https://bearforhavelock.github.io
+**Live site:** https://bearforhavelock.com
 
 ## About
 
