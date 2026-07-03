@@ -21,11 +21,15 @@ A lifelong Havelock native running on three plain commitments: enforce the ordin
 | --- | --- |
 | `index.html` | The entire website |
 | `og.png` | Social share card (1200×630) |
+| `README.md` | This File explaining the structure |
+| `BFH - Handout` | Two-page PDF for quick IRL sharing |
+| `BFH - Card` | Single-page PDF for quicker IRL sharing |
 
 ## Updating the site
 
 Edit `index.html`, commit, and GitHub Pages redeploys automatically within about a minute.
+6-7 edits already committed, LOL
 
 ## Cost
 
-$0. No funds were raised or spent to produce this site.
+$0. No funds were raised or spent to produce this site. My primary goal: Minimal funding spent.
