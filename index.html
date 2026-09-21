@@ -447,6 +447,28 @@
     font-family: 'Courier Prime', monospace; font-size: 0.75rem;
     color: var(--rust); margin-top: 0.75rem;
   }
+
+  /* ── CHARTS ── */
+  .chart-row { display: grid; gap: 2rem; margin: 2.5rem 0 1rem; }
+  .chart { background: var(--navy); border: 1px solid rgba(255,255,255,0.12); padding: 1.2rem 1.2rem 0.3rem; overflow-x: auto; }
+  .chart svg { width: 100%; height: auto; min-width: 480px; display: block; }
+  .chart figcaption { font-family: 'Courier Prime', monospace; font-size: 0.78rem; letter-spacing: 0.03em; color: rgba(255,255,255,0.6); padding: 0.7rem 0.2rem 0.8rem; line-height: 1.55; }
+  /* ── RECORDS (FOIA) ── */
+  .rec-head, .clip-head { font-family: 'Courier Prime', monospace; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin: 3rem 0 1.2rem; }
+  .foia-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1rem; }
+  .foia-card { display: flex; flex-direction: column; gap: 0.55rem; text-decoration: none; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); border-left: 3px solid var(--rust); padding: 1.2rem; transition: background 0.2s, border-left-color 0.2s; }
+  .foia-card:hover { background: rgba(255,255,255,0.08); border-left-color: var(--gold); }
+  .foia-card .foia-period { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--white); line-height: 1.2; }
+  .foia-card .foia-finding { font-size: 0.9rem; color: rgba(255,255,255,0.7); flex: 1; line-height: 1.5; }
+  .foia-card .foia-cta { font-family: 'Courier Prime', monospace; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); }
+  /* ── VIDEO CLIPS ── */
+  .clip-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+  .clip { margin: 0; }
+  .clip video { width: 100%; height: auto; display: block; background: #000; border: 1px solid rgba(255,255,255,0.12); border-bottom: 3px solid var(--rust); }
+  .clip figcaption { font-family: 'Courier Prime', monospace; font-size: 0.8rem; letter-spacing: 0.03em; color: rgba(255,255,255,0.7); margin-top: 0.6rem; line-height: 1.5; }
+  .yt-links a { display: block; color: var(--gold); font-family: 'Courier Prime', monospace; font-size: 0.9rem; margin-bottom: 0.75rem; text-decoration: none; border-left: 2px solid var(--slate); padding-left: 1rem; transition: color 0.2s, border-left-color 0.2s; }
+  .yt-links a:hover { color: var(--rust); border-left-color: var(--rust); }
+
 </style>
 </head>
 <body>
@@ -474,20 +496,20 @@
 
     <div class="hero-stat-row">
       <div class="hero-stat">
-        <span class="num">81</span>
-        <span class="label">City-wide noise complaints logged via 4 FOIA</span>
+        <span class="num">87</span>
+        <span class="label">Noise complaints logged across 5 FOIA periods</span>
       </div>
       <div class="hero-stat">
         <span class="num">6</span>
-        <span class="label">ONLY six Enforcement actions taken</span>
+        <span class="label">Enforcement actions — none in the last four</span>
       </div>
       <div class="hero-stat">
-        <span class="num">7.4%</span>
-        <span class="label">Enforcement rate; Very Low Deterrence</span>
+        <span class="num">6.9%</span>
+        <span class="label">Enforcement rate over 7 months of records</span>
       </div>
       <div class="hero-stat">
-        <span class="num">18+</span>
-        <span class="label">Months on the record</span>
+        <span class="num">458</span>
+        <span class="label">Traffic stops in two windows — zero for noise</span>
       </div>
     </div>
 
@@ -607,7 +629,7 @@
       <figcaption>The corridor at a glance — my own route assessment as a CDL-A, hazmat- and tanker-endorsed OTR & Local driver. 5 Schools, 3 Daycares, 3 public parks, 100+ homes versus ONE extra minute of travel time for people who are paid to drive! As a responsible caring CDL-A holder, the decision is VERY simple to me.</figcaption>
     </figure>
 
-    <p>While the safety of our citizens is the primary concern, there is also the quality of life of hundreds of residents to consider. Across the FOIA periods I have documented, Havelock police logged 81 loud-noise calls for service and produced 6 enforcement actions — a 7.4% rate. In the two weeks around Christmas and New Year, nine of those calls came in — and produced a single criminal summons. In that same window, the same officers issued 45 citations and warnings across 29 offense categories — led by expired registration tags, with paperwork violations (inspections, insurance, plates) making up 16 of the 40 citations. <strong>Not one of the 45 was for noise.</strong> The noise complaint logged on McCotter Boulevard that same window produced nothing.</p>
+    <p>While the safety of our citizens is the primary concern, there is also the quality of life of hundreds of residents to consider. Across the FOIA periods I have documented, Havelock police logged 87 loud-noise calls for service and produced 6 enforcement actions — a 6.9% rate. In the two weeks around Christmas and New Year, nine of those calls came in — and produced a single criminal summons. In that same window, the same officers issued 45 citations and warnings across 29 offense categories — led by expired registration tags, with paperwork violations (inspections, insurance, plates) making up 16 of the 40 citations. <strong>Not one of the 45 was for noise.</strong> The noise complaint logged on McCotter Boulevard that same window produced nothing.</p>
 
     <p>And I tried every other path first. I filed complaints, sent emails, made calls, and submitted FOIA requests. I bought a calibrated Type 2 sound level meter, learned to use it, and logged over 150,000 A-weighted measurements. I contacted FHWA, NCDOT, the City, HPD, the DA's office, state legislators, and three members of the U.S. Congress.</p>
 
@@ -641,7 +663,7 @@
     <div class="issue-block">
       <h3>Noise: The Ordinances Exist. The Enforcement Doesn't.</h3>
       <p><strong>Havelock City Code § 93.04(B)(7)</strong> prohibits vehicle audio plainly audible outside the vehicle — no measurement, no equipment, no exemption required. Modified exhausts are covered separately: <strong>§ 93.04(B)(2), and N.C.G.S. § 20-128</strong>, the state exhaust statute, which carries no exemptions whatsoever. Straight-piped exhausts are plainly audible even through closed walls and windows.</p>
-      <p>In the two most recent documented periods — February through March and all of May 2026 — 31 noise complaints were logged citywide and not one citation was issued. For May, the city's own records custodian confirmed in writing that no noise citations or warnings were written at all. This is not a resource problem. It is a choice.</p>
+      <p>In the three most recent documented periods — February through August 2026 — 37 noise complaints were logged citywide and not one citation was issued. In the most recent window alone, HPD logged 364 traffic stops in six weeks and wrote zero noise charges. Period after period, the city's own records custodian confirmed in writing that no noise citations or warnings were written at all. This is not a resource problem. It is a choice.</p>
     </div>
 
     <div class="issue-block">
@@ -680,9 +702,9 @@
         <p>Timestamped clips documenting excessive and modified exhausts, loud audio systems, and numerous commercial trucks.</p>
       </div>
       <div class="data-card">
-        <span class="big">81</span>
+        <span class="big">87</span>
         <span class="desc">Noise Calls Logged</span>
-        <p>Calls for service over 4 documented FOIA periods. 6 enforcement actions.</p>
+        <p>Across 5 documented FOIA periods. 6 enforcement actions — none in the last four.</p>
       </div>
       <div class="data-card">
         <span class="big">90+</span>
@@ -701,13 +723,826 @@
       </div>
     </div>
 
-    <div class="video-links">
-      <p style="color:rgba(255,255,255,0.5); font-family:'Courier Prime',monospace; font-size:0.75rem; letter-spacing:0.15em; text-transform:uppercase; margin-bottom:1rem;">Video Documentation</p>
-      <a href="https://youtu.be/aMTjVBborrA" target="_blank">→ 90+ CMV on a residential school route in under 4 hours</a>
-      <a href="https://youtu.be/EcNWkBYa3nM" target="_blank">→ 13 CMV in one hour through a single lane during an active accident diversion</a>
-      <a href="https://youtu.be/asGLQoCY7as" target="_blank">→ A Sixty second shortcut Through a hundred happy Homes</a>
-      <a href="https://youtu.be/3KVbDeCbrBs" target="_blank">→ No more excuses!</a>
-      <a href="https://youtu.be/cLDjVwCsV-k" target="_blank">→ Reps refusing to Represent Us!</a>
+    <!-- ============================================================
+         CHARTS — inline SVG, fully self-contained (no external files)
+         ============================================================ -->
+    <div class="chart-row">
+      <figure class="chart">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="539.600625pt" height="305.472731pt" viewBox="0 0 539.600625 305.472731" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:c2pa="http://c2pa.org/manifest">
+ 
+ <defs>
+  
+ </defs>
+ <g id="c1-figure_1">
+  <g id="c1-patch_1">
+   <path d="M 0 305.472731 
+L 539.600625 305.472731 
+L 539.600625 0 
+L 0 0 
+z
+" style="fill: #1b2a3b"/>
+  </g>
+  <g id="c1-axes_1">
+   <g id="c1-patch_2">
+    <path d="M 41.875625 237.763491 
+L 532.400625 237.763491 
+L 532.400625 29.457891 
+L 41.875625 29.457891 
+z
+" style="fill: #1b2a3b"/>
+   </g>
+   <g id="c1-matplotlib.axis_1">
+    <g id="c1-xtick_1">
+     <g id="c1-line2d_1">
+      <defs>
+       <path id="c1-medaa2540c3" d="M 0 0 
+L 0 3.5 
+" style="stroke: #e8e2d9; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#c1-medaa2540c3" x="99.771815" y="237.763491" style="fill: #e8e2d9; stroke: #e8e2d9; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="c1-text_1">
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; fill: #e8e2d9" transform="translate(75.919002 253.121772)">Sep–Nov</text>
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; fill: #e8e2d9" transform="translate(85.774315 265.439366)">2025</text>
+     </g>
+    </g>
+    <g id="c1-xtick_2">
+     <g id="c1-line2d_2">
+      <g>
+       <use xlink:href="#c1-medaa2540c3" x="193.45497" y="237.763491" style="fill: #e8e2d9; stroke: #e8e2d9; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="c1-text_2">
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; fill: #e8e2d9" transform="translate(171.583017 253.121772)">Dec–Jan</text>
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; fill: #e8e2d9" transform="translate(169.70872 265.439366)">2025–26</text>
+     </g>
+    </g>
+    <g id="c1-xtick_3">
+     <g id="c1-line2d_3">
+      <g>
+       <use xlink:href="#c1-medaa2540c3" x="287.138125" y="237.763491" style="fill: #e8e2d9; stroke: #e8e2d9; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="c1-text_3">
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; fill: #e8e2d9" transform="translate(264.274453 253.121772)">Feb–Mar</text>
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; fill: #e8e2d9" transform="translate(273.140625 265.439366)">2026</text>
+     </g>
+    </g>
+    <g id="c1-xtick_4">
+     <g id="c1-line2d_4">
+      <g>
+       <use xlink:href="#c1-medaa2540c3" x="380.82128" y="237.763491" style="fill: #e8e2d9; stroke: #e8e2d9; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="c1-text_4">
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; fill: #e8e2d9" transform="translate(369.45003 253.121772)">May</text>
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; fill: #e8e2d9" transform="translate(366.82378 265.439366)">2026</text>
+     </g>
+    </g>
+    <g id="c1-xtick_5">
+     <g id="c1-line2d_5">
+      <g>
+       <use xlink:href="#c1-medaa2540c3" x="474.504435" y="237.763491" style="fill: #e8e2d9; stroke: #e8e2d9; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="c1-text_5">
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; fill: #e8e2d9" transform="translate(454.378732 253.121772)">Jul–Aug</text>
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; fill: #e8e2d9" transform="translate(460.506935 265.439366)">2026</text>
+     </g>
+    </g>
+   </g>
+   <g id="c1-matplotlib.axis_2">
+    <g id="c1-ytick_1">
+     <g id="c1-line2d_6">
+      <path d="M 41.875625 237.763491 
+L 532.400625 237.763491 
+" clip-path="url(#c1-p7137f9badc)" style="fill: none; stroke: #4a5a6b; stroke-opacity: 0.35; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="c1-line2d_7">
+      <defs>
+       <path id="c1-mf0a580ea68" d="M 0 0 
+L -3.5 0 
+" style="stroke: #e8e2d9; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#c1-mf0a580ea68" x="41.875625" y="237.763491" style="fill: #e8e2d9; stroke: #e8e2d9; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="c1-text_6">
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #e8e2d9" x="34.875625" y="241.942631" transform="rotate(-0 34.875625 241.942631)">0</text>
+     </g>
+    </g>
+    <g id="c1-ytick_2">
+     <g id="c1-line2d_8">
+      <path d="M 41.875625 192.479665 
+L 532.400625 192.479665 
+" clip-path="url(#c1-p7137f9badc)" style="fill: none; stroke: #4a5a6b; stroke-opacity: 0.35; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="c1-line2d_9">
+      <g>
+       <use xlink:href="#c1-mf0a580ea68" x="41.875625" y="192.479665" style="fill: #e8e2d9; stroke: #e8e2d9; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="c1-text_7">
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #e8e2d9" x="34.875625" y="196.658805" transform="rotate(-0 34.875625 196.658805)">10</text>
+     </g>
+    </g>
+    <g id="c1-ytick_3">
+     <g id="c1-line2d_10">
+      <path d="M 41.875625 147.195838 
+L 532.400625 147.195838 
+" clip-path="url(#c1-p7137f9badc)" style="fill: none; stroke: #4a5a6b; stroke-opacity: 0.35; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="c1-line2d_11">
+      <g>
+       <use xlink:href="#c1-mf0a580ea68" x="41.875625" y="147.195838" style="fill: #e8e2d9; stroke: #e8e2d9; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="c1-text_8">
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #e8e2d9" x="34.875625" y="151.374979" transform="rotate(-0 34.875625 151.374979)">20</text>
+     </g>
+    </g>
+    <g id="c1-ytick_4">
+     <g id="c1-line2d_12">
+      <path d="M 41.875625 101.912012 
+L 532.400625 101.912012 
+" clip-path="url(#c1-p7137f9badc)" style="fill: none; stroke: #4a5a6b; stroke-opacity: 0.35; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="c1-line2d_13">
+      <g>
+       <use xlink:href="#c1-mf0a580ea68" x="41.875625" y="101.912012" style="fill: #e8e2d9; stroke: #e8e2d9; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="c1-text_9">
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #e8e2d9" x="34.875625" y="106.091153" transform="rotate(-0 34.875625 106.091153)">30</text>
+     </g>
+    </g>
+    <g id="c1-ytick_5">
+     <g id="c1-line2d_14">
+      <path d="M 41.875625 56.628186 
+L 532.400625 56.628186 
+" clip-path="url(#c1-p7137f9badc)" style="fill: none; stroke: #4a5a6b; stroke-opacity: 0.35; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="c1-line2d_15">
+      <g>
+       <use xlink:href="#c1-mf0a580ea68" x="41.875625" y="56.628186" style="fill: #e8e2d9; stroke: #e8e2d9; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="c1-text_10">
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #e8e2d9" x="34.875625" y="60.807327" transform="rotate(-0 34.875625 60.807327)">40</text>
+     </g>
+    </g>
+    <g id="c1-text_11">
+     <text style="font-size: 10px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #e8e2d9" x="14.798438" y="133.610691" transform="rotate(-90 14.798438 133.610691)">Count</text>
+    </g>
+   </g>
+   <g id="c1-patch_3">
+    <path d="M 64.172216 237.763491 
+L 99.771815 237.763491 
+L 99.771815 52.099804 
+L 64.172216 52.099804 
+z
+" clip-path="url(#c1-p7137f9badc)" style="fill: #c8922a"/>
+   </g>
+   <g id="c1-patch_4">
+    <path d="M 157.855371 237.763491 
+L 193.45497 237.763491 
+L 193.45497 197.008047 
+L 157.855371 197.008047 
+z
+" clip-path="url(#c1-p7137f9badc)" style="fill: #c8922a"/>
+   </g>
+   <g id="c1-patch_5">
+    <path d="M 251.538526 237.763491 
+L 287.138125 237.763491 
+L 287.138125 174.366134 
+L 251.538526 174.366134 
+z
+" clip-path="url(#c1-p7137f9badc)" style="fill: #c8922a"/>
+   </g>
+   <g id="c1-patch_6">
+    <path d="M 345.221681 237.763491 
+L 380.82128 237.763491 
+L 380.82128 160.780986 
+L 345.221681 160.780986 
+z
+" clip-path="url(#c1-p7137f9badc)" style="fill: #c8922a"/>
+   </g>
+   <g id="c1-patch_7">
+    <path d="M 438.904836 237.763491 
+L 474.504435 237.763491 
+L 474.504435 210.593195 
+L 438.904836 210.593195 
+z
+" clip-path="url(#c1-p7137f9badc)" style="fill: #c8922a"/>
+   </g>
+   <g id="c1-patch_8">
+    <path d="M 99.771815 237.763491 
+L 135.371414 237.763491 
+L 135.371414 215.121578 
+L 99.771815 215.121578 
+z
+" clip-path="url(#c1-p7137f9badc)" style="fill: #c04e2b"/>
+   </g>
+   <g id="c1-patch_9">
+    <path d="M 193.45497 237.763491 
+L 229.054569 237.763491 
+L 229.054569 233.235108 
+L 193.45497 233.235108 
+z
+" clip-path="url(#c1-p7137f9badc)" style="fill: #c04e2b"/>
+   </g>
+   <g id="c1-patch_10">
+    <path d="M 287.138125 237.763491 
+L 322.737724 237.763491 
+L 322.737724 237.763491 
+L 287.138125 237.763491 
+z
+" clip-path="url(#c1-p7137f9badc)" style="fill: #c04e2b"/>
+   </g>
+   <g id="c1-patch_11">
+    <path d="M 380.82128 237.763491 
+L 416.420879 237.763491 
+L 416.420879 237.763491 
+L 380.82128 237.763491 
+z
+" clip-path="url(#c1-p7137f9badc)" style="fill: #c04e2b"/>
+   </g>
+   <g id="c1-patch_12">
+    <path d="M 474.504435 237.763491 
+L 510.104034 237.763491 
+L 510.104034 237.763491 
+L 474.504435 237.763491 
+z
+" clip-path="url(#c1-p7137f9badc)" style="fill: #c04e2b"/>
+   </g>
+   <g id="c1-patch_13">
+    <path d="M 41.875625 237.763491 
+L 41.875625 29.457891 
+" style="fill: none; stroke: #4a5a6b; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="c1-patch_14">
+    <path d="M 41.875625 237.763491 
+L 532.400625 237.763491 
+" style="fill: none; stroke: #4a5a6b; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="c1-text_12">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #e8e2d9" x="81.972015" y="49.382774" transform="rotate(-0 81.972015 49.382774)">41</text>
+   </g>
+   <g id="c1-text_13">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #e8e2d9" x="175.65517" y="194.291018" transform="rotate(-0 175.65517 194.291018)">9</text>
+   </g>
+   <g id="c1-text_14">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #e8e2d9" x="269.338326" y="171.649105" transform="rotate(-0 269.338326 171.649105)">14</text>
+   </g>
+   <g id="c1-text_15">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #e8e2d9" x="363.021481" y="158.063957" transform="rotate(-0 363.021481 158.063957)">17</text>
+   </g>
+   <g id="c1-text_16">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #e8e2d9" x="456.704636" y="207.876165" transform="rotate(-0 456.704636 207.876165)">6</text>
+   </g>
+   <g id="c1-text_17">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #c04e2b" x="117.571614" y="212.404548" transform="rotate(-0 117.571614 212.404548)">5</text>
+   </g>
+   <g id="c1-text_18">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #c04e2b" x="211.254769" y="230.518078" transform="rotate(-0 211.254769 230.518078)">1</text>
+   </g>
+   <g id="c1-text_19">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4a5a6b" x="304.937924" y="235.046461" transform="rotate(-0 304.937924 235.046461)">0</text>
+   </g>
+   <g id="c1-text_20">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4a5a6b" x="398.62108" y="235.046461" transform="rotate(-0 398.62108 235.046461)">0</text>
+   </g>
+   <g id="c1-text_21">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4a5a6b" x="492.304235" y="235.046461" transform="rotate(-0 492.304235 235.046461)">0</text>
+   </g>
+   <g id="c1-text_22">
+    <text style="font-style: italic; font-size: 10.5px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #c8922a" x="287.138125" y="296.089059" transform="rotate(-0 287.138125 296.089059)">458 traffic stops across two windows → 0 noise enforcement</text>
+   </g>
+   <g id="c1-text_23">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #f2ede4" x="41.875625" y="17.457891" transform="rotate(-0 41.875625 17.457891)">87 complaints.  6 actions.  Zero in the last four windows.</text>
+   </g>
+   <g id="c1-legend_1">
+    <g id="c1-patch_15">
+     <path d="M 370.350625 66.814141 
+L 525.400625 66.814141 
+Q 527.400625 66.814141 527.400625 64.814141 
+L 527.400625 36.457891 
+Q 527.400625 34.457891 525.400625 34.457891 
+L 370.350625 34.457891 
+Q 368.350625 34.457891 368.350625 36.457891 
+L 368.350625 64.814141 
+Q 368.350625 66.814141 370.350625 66.814141 
+z
+" style="fill: #1b2a3b; opacity: 0.8; stroke: #4a5a6b; stroke-linejoin: miter"/>
+    </g>
+    <g id="c1-patch_16">
+     <path d="M 372.350625 46.056328 
+L 392.350625 46.056328 
+L 392.350625 39.056328 
+L 372.350625 39.056328 
+z
+" style="fill: #c8922a"/>
+    </g>
+    <g id="c1-text_24">
+     <text style="font-size: 10px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #e8e2d9" x="400.350625" y="46.056328" transform="rotate(-0 400.350625 46.056328)">Noise complaints logged</text>
+    </g>
+    <g id="c1-patch_17">
+     <path d="M 372.350625 60.734453 
+L 392.350625 60.734453 
+L 392.350625 53.734453 
+L 372.350625 53.734453 
+z
+" style="fill: #c04e2b"/>
+    </g>
+    <g id="c1-text_25">
+     <text style="font-size: 10px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #e8e2d9" x="400.350625" y="60.734453" transform="rotate(-0 400.350625 60.734453)">Enforcement actions</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="c1-p7137f9badc">
+   <rect x="41.875625" y="29.457891" width="490.525" height="208.3056"/>
+  </clipPath>
+ </defs>
+</svg>
+        <figcaption>Five FOIA periods, Sept 2025 – Aug 2026: 87 noise complaints, 6 enforcement actions, and zero across the last four windows. Source: Havelock PD records, row-verified.</figcaption>
+      </figure>
+      <figure class="chart">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="539.600625pt" height="305.368746pt" viewBox="0 0 539.600625 305.368746" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:c2pa="http://c2pa.org/manifest">
+ 
+ <defs>
+  
+ </defs>
+ <g id="c2-figure_1">
+  <g id="c2-patch_1">
+   <path d="M 0 305.368746 
+L 539.600625 305.368746 
+L 539.600625 0 
+L 0 0 
+z
+" style="fill: #1b2a3b"/>
+  </g>
+  <g id="c2-axes_1">
+   <g id="c2-patch_2">
+    <path d="M 41.875625 237.763491 
+L 532.400625 237.763491 
+L 532.400625 29.457891 
+L 41.875625 29.457891 
+z
+" style="fill: #1b2a3b"/>
+   </g>
+   <g id="c2-matplotlib.axis_1">
+    <g id="c2-xtick_1">
+     <g id="c2-line2d_1">
+      <defs>
+       <path id="c2-m99eef7766d" d="M 0 0 
+L 0 3.5 
+" style="stroke: #e8e2d9; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#c2-m99eef7766d" x="109.239793" y="237.763491" style="fill: #e8e2d9; stroke: #e8e2d9; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="c2-text_1">
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; fill: #e8e2d9" transform="translate(93.227918 253.121772)">55 dB</text>
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; fill: #e8e2d9" transform="translate(56.564403 265.439366)">EPA residential day</text>
+     </g>
+    </g>
+    <g id="c2-xtick_2">
+     <g id="c2-line2d_2">
+      <g>
+       <use xlink:href="#c2-m99eef7766d" x="227.838681" y="237.763491" style="fill: #e8e2d9; stroke: #e8e2d9; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="c2-text_2">
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; fill: #e8e2d9" transform="translate(211.826806 253.121772)">60 dB</text>
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; fill: #e8e2d9" transform="translate(188.827353 265.439366)">city ordinance</text>
+     </g>
+    </g>
+    <g id="c2-xtick_3">
+     <g id="c2-line2d_3">
+      <g>
+       <use xlink:href="#c2-m99eef7766d" x="346.437569" y="237.763491" style="fill: #e8e2d9; stroke: #e8e2d9; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="c2-text_3">
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; fill: #e8e2d9" transform="translate(330.425694 253.121772)">70 dB</text>
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; fill: #e8e2d9" transform="translate(320.663194 265.439366)">very loud</text>
+     </g>
+    </g>
+    <g id="c2-xtick_4">
+     <g id="c2-line2d_4">
+      <g>
+       <use xlink:href="#c2-m99eef7766d" x="465.036457" y="237.763491" style="fill: #e8e2d9; stroke: #e8e2d9; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="c2-text_4">
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; fill: #e8e2d9" transform="translate(449.024582 253.121772)">85 dB</text>
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; fill: #e8e2d9" transform="translate(407.992863 265.439366)">hearing-damage risk</text>
+     </g>
+    </g>
+   </g>
+   <g id="c2-matplotlib.axis_2">
+    <g id="c2-ytick_1">
+     <g id="c2-line2d_5">
+      <path d="M 41.875625 237.763491 
+L 532.400625 237.763491 
+" clip-path="url(#c2-pb7e9c119a3)" style="fill: none; stroke: #4a5a6b; stroke-opacity: 0.35; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="c2-line2d_6">
+      <defs>
+       <path id="c2-mb94fd50d81" d="M 0 0 
+L -3.5 0 
+" style="stroke: #e8e2d9; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#c2-mb94fd50d81" x="41.875625" y="237.763491" style="fill: #e8e2d9; stroke: #e8e2d9; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="c2-text_5">
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #e8e2d9" x="34.875625" y="241.942631" transform="rotate(-0 34.875625 241.942631)">0</text>
+     </g>
+    </g>
+    <g id="c2-ytick_2">
+     <g id="c2-line2d_7">
+      <path d="M 41.875625 214.0924 
+L 532.400625 214.0924 
+" clip-path="url(#c2-pb7e9c119a3)" style="fill: none; stroke: #4a5a6b; stroke-opacity: 0.35; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="c2-line2d_8">
+      <g>
+       <use xlink:href="#c2-mb94fd50d81" x="41.875625" y="214.0924" style="fill: #e8e2d9; stroke: #e8e2d9; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="c2-text_6">
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #e8e2d9" x="34.875625" y="218.27154" transform="rotate(-0 34.875625 218.27154)">10</text>
+     </g>
+    </g>
+    <g id="c2-ytick_3">
+     <g id="c2-line2d_9">
+      <path d="M 41.875625 190.421309 
+L 532.400625 190.421309 
+" clip-path="url(#c2-pb7e9c119a3)" style="fill: none; stroke: #4a5a6b; stroke-opacity: 0.35; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="c2-line2d_10">
+      <g>
+       <use xlink:href="#c2-mb94fd50d81" x="41.875625" y="190.421309" style="fill: #e8e2d9; stroke: #e8e2d9; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="c2-text_7">
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #e8e2d9" x="34.875625" y="194.600449" transform="rotate(-0 34.875625 194.600449)">20</text>
+     </g>
+    </g>
+    <g id="c2-ytick_4">
+     <g id="c2-line2d_11">
+      <path d="M 41.875625 166.750218 
+L 532.400625 166.750218 
+" clip-path="url(#c2-pb7e9c119a3)" style="fill: none; stroke: #4a5a6b; stroke-opacity: 0.35; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="c2-line2d_12">
+      <g>
+       <use xlink:href="#c2-mb94fd50d81" x="41.875625" y="166.750218" style="fill: #e8e2d9; stroke: #e8e2d9; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="c2-text_8">
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #e8e2d9" x="34.875625" y="170.929359" transform="rotate(-0 34.875625 170.929359)">30</text>
+     </g>
+    </g>
+    <g id="c2-ytick_5">
+     <g id="c2-line2d_13">
+      <path d="M 41.875625 143.079127 
+L 532.400625 143.079127 
+" clip-path="url(#c2-pb7e9c119a3)" style="fill: none; stroke: #4a5a6b; stroke-opacity: 0.35; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="c2-line2d_14">
+      <g>
+       <use xlink:href="#c2-mb94fd50d81" x="41.875625" y="143.079127" style="fill: #e8e2d9; stroke: #e8e2d9; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="c2-text_9">
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #e8e2d9" x="34.875625" y="147.258268" transform="rotate(-0 34.875625 147.258268)">40</text>
+     </g>
+    </g>
+    <g id="c2-ytick_6">
+     <g id="c2-line2d_15">
+      <path d="M 41.875625 119.408036 
+L 532.400625 119.408036 
+" clip-path="url(#c2-pb7e9c119a3)" style="fill: none; stroke: #4a5a6b; stroke-opacity: 0.35; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="c2-line2d_16">
+      <g>
+       <use xlink:href="#c2-mb94fd50d81" x="41.875625" y="119.408036" style="fill: #e8e2d9; stroke: #e8e2d9; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="c2-text_10">
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #e8e2d9" x="34.875625" y="123.587177" transform="rotate(-0 34.875625 123.587177)">50</text>
+     </g>
+    </g>
+    <g id="c2-ytick_7">
+     <g id="c2-line2d_17">
+      <path d="M 41.875625 95.736945 
+L 532.400625 95.736945 
+" clip-path="url(#c2-pb7e9c119a3)" style="fill: none; stroke: #4a5a6b; stroke-opacity: 0.35; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="c2-line2d_18">
+      <g>
+       <use xlink:href="#c2-mb94fd50d81" x="41.875625" y="95.736945" style="fill: #e8e2d9; stroke: #e8e2d9; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="c2-text_11">
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #e8e2d9" x="34.875625" y="99.916086" transform="rotate(-0 34.875625 99.916086)">60</text>
+     </g>
+    </g>
+    <g id="c2-ytick_8">
+     <g id="c2-line2d_19">
+      <path d="M 41.875625 72.065854 
+L 532.400625 72.065854 
+" clip-path="url(#c2-pb7e9c119a3)" style="fill: none; stroke: #4a5a6b; stroke-opacity: 0.35; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="c2-line2d_20">
+      <g>
+       <use xlink:href="#c2-mb94fd50d81" x="41.875625" y="72.065854" style="fill: #e8e2d9; stroke: #e8e2d9; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="c2-text_12">
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #e8e2d9" x="34.875625" y="76.244995" transform="rotate(-0 34.875625 76.244995)">70</text>
+     </g>
+    </g>
+    <g id="c2-ytick_9">
+     <g id="c2-line2d_21">
+      <path d="M 41.875625 48.394763 
+L 532.400625 48.394763 
+" clip-path="url(#c2-pb7e9c119a3)" style="fill: none; stroke: #4a5a6b; stroke-opacity: 0.35; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="c2-line2d_22">
+      <g>
+       <use xlink:href="#c2-mb94fd50d81" x="41.875625" y="48.394763" style="fill: #e8e2d9; stroke: #e8e2d9; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="c2-text_13">
+      <text style="font-size: 11px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #e8e2d9" x="34.875625" y="52.573904" transform="rotate(-0 34.875625 52.573904)">80</text>
+     </g>
+    </g>
+    <g id="c2-text_14">
+     <text style="font-size: 10px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #e8e2d9" x="14.798438" y="133.610691" transform="rotate(-90 14.798438 133.610691)">% of readings above the limit</text>
+    </g>
+   </g>
+   <g id="c2-patch_3">
+    <path d="M 64.172216 237.763491 
+L 109.239793 237.763491 
+L 109.239793 121.538434 
+L 64.172216 121.538434 
+z
+" clip-path="url(#c2-pb7e9c119a3)" style="fill: #4a5a6b"/>
+   </g>
+   <g id="c2-patch_4">
+    <path d="M 182.771104 237.763491 
+L 227.838681 237.763491 
+L 227.838681 170.774303 
+L 182.771104 170.774303 
+z
+" clip-path="url(#c2-pb7e9c119a3)" style="fill: #4a5a6b"/>
+   </g>
+   <g id="c2-patch_5">
+    <path d="M 301.369992 237.763491 
+L 346.437569 237.763491 
+L 346.437569 235.159671 
+L 301.369992 235.159671 
+z
+" clip-path="url(#c2-pb7e9c119a3)" style="fill: #4a5a6b"/>
+   </g>
+   <g id="c2-patch_6">
+    <path d="M 419.968879 237.763491 
+L 465.036457 237.763491 
+L 465.036457 237.692477 
+L 419.968879 237.692477 
+z
+" clip-path="url(#c2-pb7e9c119a3)" style="fill: #4a5a6b"/>
+   </g>
+   <g id="c2-patch_7">
+    <path d="M 109.239793 237.763491 
+L 154.307371 237.763491 
+L 154.307371 57.8632 
+L 109.239793 57.8632 
+z
+" clip-path="url(#c2-pb7e9c119a3)" style="fill: #c04e2b"/>
+   </g>
+   <g id="c2-patch_8">
+    <path d="M 227.838681 237.763491 
+L 272.906258 237.763491 
+L 272.906258 113.253552 
+L 227.838681 113.253552 
+z
+" clip-path="url(#c2-pb7e9c119a3)" style="fill: #c04e2b"/>
+   </g>
+   <g id="c2-patch_9">
+    <path d="M 346.437569 237.763491 
+L 391.505146 237.763491 
+L 391.505146 208.174627 
+L 346.437569 208.174627 
+z
+" clip-path="url(#c2-pb7e9c119a3)" style="fill: #c04e2b"/>
+   </g>
+   <g id="c2-patch_10">
+    <path d="M 465.036457 237.763491 
+L 510.104034 237.763491 
+L 510.104034 235.159671 
+L 465.036457 235.159671 
+z
+" clip-path="url(#c2-pb7e9c119a3)" style="fill: #c04e2b"/>
+   </g>
+   <g id="c2-patch_11">
+    <path d="M 41.875625 237.763491 
+L 41.875625 29.457891 
+" style="fill: none; stroke: #4a5a6b; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="c2-patch_12">
+    <path d="M 41.875625 237.763491 
+L 532.400625 237.763491 
+" style="fill: none; stroke: #4a5a6b; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="c2-text_15">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #e8e2d9" x="86.706005" y="118.224482" transform="rotate(-0 86.706005 118.224482)">49%</text>
+   </g>
+   <g id="c2-text_16">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #e8e2d9" x="205.304892" y="167.460351" transform="rotate(-0 205.304892 167.460351)">28%</text>
+   </g>
+   <g id="c2-text_17">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #e8e2d9" x="323.90378" y="231.845718" transform="rotate(-0 323.90378 231.845718)">1%</text>
+   </g>
+   <g id="c2-text_18">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #e8e2d9" x="442.502668" y="234.378525" transform="rotate(-0 442.502668 234.378525)">0.03%</text>
+   </g>
+   <g id="c2-text_19">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #e8e2d9" x="131.773582" y="54.549247" transform="rotate(-0 131.773582 54.549247)">76%</text>
+   </g>
+   <g id="c2-text_20">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #e8e2d9" x="250.37247" y="109.9396" transform="rotate(-0 250.37247 109.9396)">53%</text>
+   </g>
+   <g id="c2-text_21">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #e8e2d9" x="368.971358" y="204.860674" transform="rotate(-0 368.971358 204.860674)">12%</text>
+   </g>
+   <g id="c2-text_22">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #e8e2d9" x="487.570245" y="231.845718" transform="rotate(-0 487.570245 231.845718)">1%</text>
+   </g>
+   <g id="c2-text_23">
+    <text style="font-style: italic; font-size: 10px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #c8922a" x="287.138125" y="296.089059" transform="rotate(-0 287.138125 296.089059)">A-weighting understates engine/exhaust noise — C-weighting is what residents feel</text>
+   </g>
+   <g id="c2-text_24">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #f2ede4" x="41.875625" y="17.457891" transform="rotate(-0 41.875625 17.457891)">76% of low-frequency readings break the residential limit.</text>
+   </g>
+   <g id="c2-legend_1">
+    <g id="c2-patch_13">
+     <path d="M 283.214687 66.814141 
+L 525.400625 66.814141 
+Q 527.400625 66.814141 527.400625 64.814141 
+L 527.400625 36.457891 
+Q 527.400625 34.457891 525.400625 34.457891 
+L 283.214687 34.457891 
+Q 281.214687 34.457891 281.214687 36.457891 
+L 281.214687 64.814141 
+Q 281.214687 66.814141 283.214687 66.814141 
+z
+" style="fill: #1b2a3b; opacity: 0.8; stroke: #4a5a6b; stroke-linejoin: miter"/>
+    </g>
+    <g id="c2-patch_14">
+     <path d="M 285.214687 46.056328 
+L 305.214687 46.056328 
+L 305.214687 39.056328 
+L 285.214687 39.056328 
+z
+" style="fill: #4a5a6b"/>
+    </g>
+    <g id="c2-text_25">
+     <text style="font-size: 10px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #e8e2d9" x="313.214687" y="46.056328" transform="rotate(-0 313.214687 46.056328)">A-weighted  (what standard meters show)</text>
+    </g>
+    <g id="c2-patch_15">
+     <path d="M 285.214687 60.734453 
+L 305.214687 60.734453 
+L 305.214687 53.734453 
+L 285.214687 53.734453 
+z
+" style="fill: #c04e2b"/>
+    </g>
+    <g id="c2-text_26">
+     <text style="font-size: 10px; font-family: 'Source Sans 3', 'Segoe UI', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #e8e2d9" x="313.214687" y="60.734453" transform="rotate(-0 313.214687 60.734453)">C-weighted  (engine · exhaust · bass)</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="c2-pb7e9c119a3">
+   <rect x="41.875625" y="29.457891" width="490.525" height="208.3056"/>
+  </clipPath>
+ </defs>
+</svg>
+        <figcaption>Share of calibrated readings above each limit. A-weighting (grey) understates engine and exhaust noise; C-weighting (rust) is what residents actually feel — 76% of it breaks the 55 dB residential limit.</figcaption>
+      </figure>
+    </div>
+
+    <!-- ============================================================
+         THE RECORDS — FOIA PDFs. Files live in the /Records folder in
+         the repo (case-sensitive — do not rename the folder).
+         ============================================================ -->
+    <p class="rec-head">The Records — read the FOIA for yourself</p>
+    <div class="foia-grid">
+      <a class="foia-card" href="Records/FOIA-1_Redact.pdf" target="_blank" rel="noopener">
+        <span class="foia-period">Sep 1 – Nov 30, 2025</span>
+        <span class="foia-finding">41 noise calls · 5 actions — all four citations at a single block, plus one vehicle-speaker warning.</span>
+        <span class="foia-cta">View PDF →</span>
+      </a>
+      <a class="foia-card" href="Records/FOIA-2_Redact.pdf" target="_blank" rel="noopener">
+        <span class="foia-period">Dec 22 – Jan 4, 2026</span>
+        <span class="foia-finding">9 noise calls · 1 criminal summons. 45 other citations and warnings issued that window — none for noise.</span>
+        <span class="foia-cta">View PDF →</span>
+      </a>
+      <a class="foia-card" href="Records/FOIA-3_Redact.pdf" target="_blank" rel="noopener">
+        <span class="foia-period">Feb 18 – Mar 19, 2026</span>
+        <span class="foia-finding">14 noise calls · 0 enforcement. Every call closed with no ordinance cited.</span>
+        <span class="foia-cta">View PDF →</span>
+      </a>
+      <a class="foia-card" href="Records/FOIA-4_Redact.pdf" target="_blank" rel="noopener">
+        <span class="foia-period">May 1 – 31, 2026</span>
+        <span class="foia-finding">17 noise calls · 0 enforcement. HPD confirmed in writing: no noise citations or warnings all month.</span>
+        <span class="foia-cta">View PDF →</span>
+      </a>
+      <a class="foia-card" href="Records/FOIA-5_Redact.pdf" target="_blank" rel="noopener">
+        <span class="foia-period">Jul 15 – Aug 25, 2026</span>
+        <span class="foia-finding">6 noise calls · 0 enforcement — against 364 traffic stops in the same six weeks, zero for noise.</span>
+        <span class="foia-cta">View PDF →</span>
+      </a>
+    </div>
+
+    <!-- ============================================================
+         THE FOOTAGE — self-hosted HTML5 video on Cloudflare R2.
+         Served from https://video.bearforhavelock.com/<name>.mp4
+         Upload each MP4 to the R2 bucket using the EXACT filename in its
+         <source>. A clip not yet uploaded: comment out its <figure>.
+         ============================================================ -->
+    <p class="clip-head">The Footage — full audio, uncompressed</p>
+    <div class="clip-grid">
+
+      <figure class="clip">
+        <video controls preload="metadata" playsinline>
+          <source src="https://video.bearforhavelock.com/breaking-social-contract.mp4" type="video/mp4">
+          Your browser can't play this clip — <a href="https://video.bearforhavelock.com/breaking-social-contract.mp4">download it here</a>.
+        </video>
+        <figcaption>Breaking the Social Contract</figcaption>
+      </figure>
+
+      <figure class="clip">
+        <video controls preload="metadata" playsinline>
+          <source src="https://video.bearforhavelock.com/too-many-radios-1.mp4" type="video/mp4">
+          Your browser can't play this clip — <a href="https://video.bearforhavelock.com/too-many-radios-1.mp4">download it here</a>.
+        </video>
+        <figcaption>Too Many — Car Audio Systems</figcaption>
+      </figure>
+
+      <figure class="clip">
+        <video controls preload="metadata" playsinline>
+          <source src="https://video.bearforhavelock.com/too-many-mufflers-1.mp4" type="video/mp4">
+          Your browser can't play this clip — <a href="https://video.bearforhavelock.com/too-many-mufflers-1.mp4">download it here</a>.
+        </video>
+        <figcaption>Too Many — Modified Exhausts</figcaption>
+      </figure>
+
+      <figure class="clip">
+        <video controls preload="metadata" playsinline>
+          <source src="https://video.bearforhavelock.com/spl-9-3-2026.mp4" type="video/mp4">
+          Your browser can't play this clip — <a href="https://video.bearforhavelock.com/spl-9-3-2026.mp4">download it here</a>.
+        </video>
+        <figcaption>Sound-level meter, live — Sept 3, 2026</figcaption>
+      </figure>
+
+      <figure class="clip">
+        <video controls preload="metadata" playsinline>
+          <source src="https://video.bearforhavelock.com/weakness-makes-excuses.mp4" type="video/mp4">
+          Your browser can't play this clip — <a href="https://video.bearforhavelock.com/weakness-makes-excuses.mp4">download it here</a>.
+        </video>
+        <figcaption>Weakness Makes Excuses</figcaption>
+      </figure>
+
+    </div>
+
+    <!-- ============================================================
+         YOUTUBE — (clips may be unlisted).
+         For each slot: paste the URL into href="", replace the label text
+         after the arrow, and write your own description. Leave until then.
+         ============================================================ -->
+    <p class="clip-head">More on the channel</p>
+    <div class="yt-links">
+      <!-- YOUTUBE SLOT 1 — paste URL in href, rename label, add your description -->
+      <a href="https://youtu.be/EcNWkBYa3nM" target="_blank" rel="noopener">→ Amateur TIA following a wreck: 1 hour, single-direction</a>
+      <!-- YOUTUBE SLOT 2 -->
+      <a href="https://youtu.be/aMTjVBborrA" target="_blank" rel="noopener">→ 85+ CMV in under 4 hours; Amateur TIA</a>
+      <!-- YOUTUBE SLOT 3 -->
+      <a href="https://youtu.be/3KVbDeCbrBs" target="_blank" rel="noopener">→ Full 30-min conversation with HPD Patrol Captain</a>
+      <!-- YOUTUBE SLOT 4 -->
+      <a href="https://youtu.be/_5ZYMt_OrYc" target="_blank" rel="noopener">→ What is a "shortcut" really worth?</a>
     </div>
   </div>
 </section>
