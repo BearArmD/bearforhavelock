@@ -469,7 +469,13 @@
   .yt-links a { display: block; color: var(--gold); font-family: 'Courier Prime', monospace; font-size: 0.9rem; margin-bottom: 0.75rem; text-decoration: none; border-left: 2px solid var(--slate); padding-left: 1rem; transition: color 0.2s, border-left-color 0.2s; }
   .yt-links a:hover { color: var(--rust); border-left-color: var(--rust); }
 
-</style>
+    details.collapsible > summary { cursor: pointer; display: block; list-style: none; }
+    details.collapsible > summary::-webkit-details-marker { display: none; }
+    details.collapsible > summary h3 { display: inline-block; }
+    details.collapsible > summary h3::after { content: " \25B8"; color: var(--gold); font-weight: 400; }
+    details.collapsible[open] > summary h3::after { content: " \25BE"; }
+    details.collapsible > summary:hover h3 { color: var(--gold); }
+  </style>
 </head>
 <body>
 
@@ -533,21 +539,21 @@
 
     <div class="who-grid">
       <div class="who-card">
-        <h3>Background</h3>
+        <details class="collapsible"><summary><h3>Background</h3></summary>
         <p>Lifelong Havelock native and taxpayer. CDL-A holder with Hazmat and Tanker endorsements. Owned and operated a Havelock home repair company — seven employees at its close when COVID hit. Current family caregiver. AAS Cybersecurity & Networking student at Craven Community College, a top National Cyber League competitor.</p>
-      </div>
+      </details></div>
       <div class="who-card">
-        <h3>What I Bring</h3>
+        <details class="collapsible"><summary><h3>What I Bring</h3></summary>
         <p>A lifetime on these roads — every inch of woods, street, and railroad in this town. I have cared for Havelock's parents and grandparents as a CNA, and spent twenty years building and repairing its homes. I have also seen enough of everywhere else (nearly all of the lower 48 behind the wheel, a handful of countries beyond); I know what a town looks like when it puts its own people first. I will live with the results of every decision right alongside my neighbors.</p>
-      </div>
+      </details></div>
       <div class="who-card">
-        <h3>My Commitment</h3>
+        <details class="collapsible"><summary><h3>My Commitment</h3></summary>
         <p>A more peaceful and prosperous Havelock: public money spent with clear, itemized accountability, and taxpayers receiving every service they already pay for. And I will answer every constituent email within two weeks, barring unforeseen life events.</p>
-      </div>
+      </details></div>
       <div class="who-card">
-        <h3>Standing</h3>
+        <details class="collapsible"><summary><h3>Standing</h3></summary>
         <p>I am not asking Havelock to trust my word. I am asking Havelock to read the record. Every claim on this site is documented. Every number is sourced. Every letter is in my sent folder.</p>
-      </div>
+      </details></div>
     </div>
   </div>
 </section>
@@ -649,32 +655,32 @@
     <h2>What this campaign<br>is actually about.</h2>
 
     <div class="issue-block">
-      <h3>CMV Traffic on Residential Roads</h3>
+      <details class="collapsible"><summary><h3>CMV Traffic on Residential Roads</h3></summary>
       <p>McCotter Boulevard is a school walking route; it has been my whole life — I walked these roads to HMS/HHS myself. It is a bus corridor with no sidewalks, no shoulders, homes about 70 feet from the travel lanes, five schools and three public parks nearby — including a children's park whose gate stands open about 90 feet from the pavement. Since the US 70 bypass opened, it has absorbed commercial truck overflow it was never designed to handle. McCotter is a <strong>state-maintained road (SR-1824)</strong>, so a city cannot reroute it on its own — under <strong>N.C.G.S. § 136-66.1</strong> and <strong>§ 160A-296</strong> that authority belongs to NCDOT, and NCDOT has told me the trucks' weight is legal. So this is not a fight about tonnage; it is about safety and geometry. What a commissioner can do is force the question into the open: a Board resolution, a documented safety case, and a formal demand that NCDOT and the Division 2 Engineer answer it. <strong>I don't promise a reroute — I promise to force the safety question into the open.</strong></p>
-    </div>
+    </details></div>
 
     <div class="issue-block">
-      <h3>Noise: The Ordinances Exist. The Enforcement Doesn't.</h3>
+      <details class="collapsible"><summary><h3>Noise: The Ordinances Exist. The Enforcement Doesn't.</h3></summary>
       <p><strong>Havelock City Code § 93.04(B)(7)</strong> prohibits vehicle audio plainly audible outside the vehicle — no measurement, no equipment, no exemption required. Modified exhausts are covered separately: <strong>§ 93.04(B)(2), and N.C.G.S. § 20-128</strong>, the state exhaust statute, which carries no exemptions whatsoever. Straight-piped exhausts are plainly audible even through closed walls and windows.</p>
       <p>This is not a nuisance complaint — it is a documented health problem. Peer-reviewed research links chronic traffic and community noise to heart disease, stroke, and disrupted sleep, and flags intermittent noise — like passing trucks and exhaust — as a cardiovascular risk (UC Davis 2025). Low-frequency bass passes through walls and closed windows, impairs higher-order thinking, and is under-counted by the standard A-weighted meters cities rely on (Liang et al., BMC Public Health 2024). That is exactly the noise the <strong>plainly audible</strong> standard in § 93.04(B)(7) is written to reach — and exactly the noise going uncited. When the ordinance already covers the harm, enforcement is the only protection residents have.</p>
       <p>In the three most recent documented periods — February through August 2026, about six months — 37 noise complaints were logged citywide and not one citation was issued. Period after period, the city's own records custodian confirmed in writing that no noise citations or warnings were written at all. This is not a resource problem. It is a choice.</p>
-    </div>
+    </details></div>
 
     <div class="issue-block">
-      <h3>Local-First Spending</h3>
+      <details class="collapsible"><summary><h3>Local-First Spending</h3></summary>
       <p>The police department is one of the largest appropriations in our city budget — and that is fine, if we receive the services we pay for. The record shows officers producing citations for expired tags, inspections, and insurance — paperwork that does nothing to make a street quieter or safer — while the ordinances that actually protect residents' quality of life go unenforced. Our officers' time belongs to Havelock's residents first.</p>
       <p>The same principle runs through the whole budget. We pay city and county taxes separately for a reason: the city's resources belong to the people who live here. Havelock's money serves Havelock's people — before Raleigh, before tourists, before anyone who does not live here.</p>
-    </div>
+    </details></div>
 
     <div class="issue-block">
-      <h3>Accountability and Transparency</h3>
+      <details class="collapsible"><summary><h3>Accountability and Transparency</h3></summary>
       <p>Residents deserve to know what their government is and is not doing. FOIA requests should not be the only way to find out that a road was never studied, that a noise complaint was never acted on, or that an enforcement directive produced less enforcement. Documentation requests are not adversarial acts — they are citizenship.</p>
-    </div>
+    </details></div>
 
     <div class="issue-block">
-      <h3>Property Rights and Quality of Life</h3>
+      <details class="collapsible"><summary><h3>Property Rights and Quality of Life</h3></summary>
       <p>The homes on the residential streets and lanes along the McCotter Boulevard corridor were purchased with a reasonable expectation of what that neighborhood would be. That expectation was changed without notice, without study, and without consent — by decisions made by people who do not live here. Government action that destroys the use and enjoyment of private property has a name. Not unlike <em>United States v. Causby</em> (1946), residents have a right to what they paid for.</p>
-    </div>
+    </details></div>
   </div>
 </section>
 
